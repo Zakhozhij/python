@@ -42,7 +42,9 @@ print(ex_list_2)
 ex_list_1_max_degree=find_max_degree(ex_list_1)
 ex_list_2_max_degree=find_max_degree(ex_list_2)
 if ex_list_1_max_degree>=ex_list_2_max_degree:
-    print(result(ex_list_1,ex_list_2))
+    stroke=result(ex_list_1,ex_list_2)
 elif ex_list_2_max_degree>ex_list_1_max_degree:
-    print(result(ex_list_2,ex_list_1))
-
+    stroke=result(ex_list_2,ex_list_1)
+print(stroke)
+with open("file_3.txt", "w") as f:
+    f.write(stroke)
