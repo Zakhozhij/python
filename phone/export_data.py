@@ -4,3 +4,4 @@ def get_records():
         list_records = list(csv.reader(file))
         list_records.pop(0)
         return list_records
+
